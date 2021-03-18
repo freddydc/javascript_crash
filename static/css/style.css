@@ -1,0 +1,24 @@
+.container-1 {
+    border: 0.5px solid black;
+}
+
+.flex-box-container-1 {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /*flex-direction: column-reverse;*/
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column;*/
+    justify-content: space-around;
+    /*justify-content: flex-start;*/
+    /*justify-content: flex-end;*/
+}
+
+.flex-box-container-1 div {
+    display: flex;
+    padding: 10px;
+    border: 0.5px solid orange;
+    align-items: center;
+}

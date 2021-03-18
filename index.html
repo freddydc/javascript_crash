@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <title>Crash Javascript</title>
+</head>
+<body>
+    <h1 id="title"></h1>
+    <p id="text"></p>
+
+    <div class="container-1">
+        <h2>Challenge 1: Your age in Days</h2>
+        <div class="flex-box-container-1">
+            <div>
+                <button class="btn btn-primary" onclick="age_in_days()">Click me</button>
+            </div>
+            <div>
+                <button class="btn btn-danger">Reset</button>
+            </div>
+        </div>
+        <div class="flex-box-container-1">
+            <div id="flex-box-result">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        let my_json = `[
+            {
+                "name": "freddy",
+                "age": 90,
+                "height": 190
+            },
+            {
+                "name": "freddy",
+                "age": 90,
+                "height": 190
+            }
+        ]`
+
+        // console.log(my_json[0]["name"])
+        console.log(JSON.parse(my_json)[0].name)
+    </script>
+    <script src="static/js/app.js"></script>
+</body>
+</html>
